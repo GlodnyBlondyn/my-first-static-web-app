@@ -1,7 +1,7 @@
 const emailInput = document.getElementById("emailForm");
 const passwordInput = document.getElementById("passwordForm");
 const loginButton = document.getElementById("button");
-//nmg
+
 function login() {
   const email = emailInput.value;
   const password = passwordInput.value;
