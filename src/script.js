@@ -15,7 +15,7 @@ loginForm.addEventListener('submit', (event) => {
   // sprawdź, czy wprowadzony login i hasło są poprawne
   if (emailForm === 'test' && passwordForm === '1234') {
     // przekieruj użytkownika na stronę po zalogowaniu
-    window.location.href = 'C:\Users\anton\Desktop\programowanie\strona bar\navigation_bar-main\navigation_bar-main\index.html';
+    window.location.href = '';
   } else {
     // wyświetl komunikat o błędnym loginie lub haśle
     alert('Nieprawidłowy login lub hasło.');
