@@ -1,23 +1,18 @@
-// wybierz elementy DOM formularza logowania
-const loginForm = document.querySelector('#login-form');
-const loginInput = document.querySelector('#login-input');
-const passwordInput = document.querySelector('#password-input');
+const emailInput = document.getElementById("emailForm");
+const passwordInput = document.getElementById("passwordForm");
+const loginButton = document.getElementById("button");
 
-// zdefiniuj funkcję do obsługi zdarzenia "submit" formularza logowania
-loginForm.addEventListener('submit', (event) => {
-  // zapobiegaj domyślnej akcji przesyłania formularza
-  event.preventDefault();
+function login() {
+  const email = emailInput.value;
+  const password = passwordInput.value;
 
-  // pobierz wprowadzone dane logowania
-  const loginValue = loginInput.value;
-  const passwordValue = passwordInput.value;
-
-  // sprawdź, czy wprowadzony login i hasło są poprawne
-  if (emailForm === 'test' && passwordForm === '1234') {
-    // przekieruj użytkownika na stronę po zalogowaniu
-    window.location.href = 'index2.html';
+  if (email === "admin" && password === "1234") {
+    window.location.href = "index2.html";
   } else {
-    // wyświetl komunikat o błędnym loginie lub haśle
-    alert('Nieprawidłowy login lub hasło.');
+    alert("Niepoprawny login lub hasło!");
   }
+}
+
+loginButton.addEventListener("click", function () {
+  login();
 });
